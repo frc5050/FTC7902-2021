@@ -44,12 +44,12 @@ public class Robot {
         int newLeftTarget = leftFront.getCurrentPosition() + (int)(leftInches * COUNTS_PER_INCH);
     }
 
-
-
-
-
-
-
+    public void setSpeeds(double leftSpeed, double rightSpeed) {
+        leftBack.setPower(leftSpeed);
+        leftFront.setPower(leftSpeed);
+        rightFront.setPower(rightSpeed);
+        rightBack.setPower(rightSpeed);
+    }
 
 
 }
